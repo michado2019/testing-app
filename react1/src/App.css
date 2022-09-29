@@ -1,0 +1,12 @@
+.signIn-btn, .signOut-btn{
+    background-color: green;
+    padding: 5px 20px;
+    color: white;
+    display: block;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.signOut-btn{
+    background-color: red;
+}

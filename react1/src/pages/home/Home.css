@@ -1,0 +1,75 @@
+.homeWrapper{
+    background-image: url('/public/bground.jpg');
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-color: #fff;
+    background-size: 700px;
+    background-attachment: fixed;
+}
+.homeSwitch-div{
+    display: flex;
+    align-items: center;
+    margin: 85px 10px;
+    position: sticky;
+    top: 85px;
+    left: 30px;
+}
+.homeFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22%;
+    padding: 0 20px;
+}
+.homeFlex a{
+    text-decoration: none;
+    color: rgb(157, 154, 154);
+}
+.homeImg-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    animation-name: home;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+}
+.homeImg{
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: rgb(103, 61, 61);
+    padding: 10px;
+    cursor: pointer;
+}
+
+@keyframes home{
+    0%{
+        margin-left: 800%;
+    }
+    100%{
+        margin-left: 10px;
+    }
+}
+
+.homeBottom-text{
+    font-size: 18px;
+    border-bottom: 3px solid #483131;
+    padding-top: 5px;
+}
+
+.homeClick{
+    animation: home;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 72%;
+    padding-left: 3%;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 4px -8px;
+    border-radius: 2px;
+    background-color: #2487b5;
+}

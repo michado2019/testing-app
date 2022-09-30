@@ -9,11 +9,11 @@ import Home from "./pages/home/Home";
 const themes = {
   light: {
     foreground: "000000",
-    background: "#eeeeee",
+    background: "",
   },
   dark: {
     foreground: "#f2f2f2",
-    background: "#000000",
+    background: "",
   },
 };
 

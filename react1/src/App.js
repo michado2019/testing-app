@@ -32,7 +32,7 @@ function App() {
         <TopLayout />
         <Routes>
           <Route path="/" element={<Home toggle={toggle}/>} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About toggle= {toggle}/>} />
         </Routes>
         <BottomLayout />
       </div>

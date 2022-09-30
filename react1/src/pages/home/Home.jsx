@@ -5,6 +5,7 @@ import "./Home.css";
 import { homepageImg } from "../../DataBase";
 import { ThemesContext } from "../../App";
 import { NavLink } from "react-router-dom";
+import { SignInBtn} from "../../CustomHooks";
 
 export default function Home(props) {
 
@@ -27,11 +28,14 @@ export default function Home(props) {
   });
   return (
     <div className="homeWrapper" style={{background: background, color: foreground}}>
-      <div className="homeSwitch-div">
+     <div className="homeSwitchAndSignIn-btn_div">
+     <div className="homeSwitch-div">
       <DarkMode />
       <Switch onClick={toggle}/>
       <WbSunnyOutlined />
       </div>
+      <SignInBtn>Sign in</SignInBtn>
+     </div>
       <div className="homeFlex">
       <a href="https://thealtschool.com/software-engineering/" 
       target='_blank' rel='noreferrer'>

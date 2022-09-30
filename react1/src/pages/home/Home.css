@@ -6,19 +6,25 @@
     background-size: 700px;
     background-attachment: fixed;
 }
+.homeSwitchAndSignIn-btn_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
 .homeSwitch-div{
     display: flex;
     align-items: center;
-    margin: 85px 10px;
+    margin: 85px 0;
     position: sticky;
     top: 85px;
-    left: 30px;
+    left: 0;
 }
 .homeFlex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 22%;
+    margin-top: 15%;
     padding: 0 20px;
 }
 .homeFlex a{

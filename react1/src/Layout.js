@@ -9,7 +9,7 @@ export const TopLayout = function () {
         <NavLink to="/" className="logoImg">
           <img
             src="https://thealtschool.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-1.png"
-            alt="logo"
+            alt="Altschoollogo"
           />
         </NavLink>
         <NavLink

@@ -43,7 +43,6 @@ export const TopLayout = function () {
     </div>
   );
 };
-
 export const BottomLayout = function () {
   return (
     <div className="bottomLayout-wrapper">

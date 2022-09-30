@@ -1,42 +1,51 @@
-import React, { createContext, useState } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { BottomLayout, TopLayout } from "./Layout";
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
-
-//Mode useContext
-const themes = {
-  light: {
-    foreground: "000000",
-    background: "",
-  },
-  dark: {
-    foreground: "#f2f2f2",
-    background: "#22222a",
-  },
-};
-
-//create context
-export const ThemesContext = createContext(themes.light);
+import Switch from '@mui/material/Switch';
+import {DarkMode, WbSunnyOutlined} from '@mui/icons-material'
+import { SignInBtn } from "./CustomHooks";
 
 function App() {
  const [darkMode, setDarkMode] = useState(false)
- const value = darkMode ? themes.dark : themes.light
- const toggle = () => {
+const themes = {
+  dark:{
+    background: '#000000',
+    foreground: '#ffffff'
+  },
+  light:{
+    background: '#ffffff',
+    foreground: '#eeeeee'
+  }
+}
+const {dark, light} = themes
+ //handle switch
+ function toggle(e){
+  e.preventDefault()
   setDarkMode(prev => !prev)
  }
   return (
-    <ThemesContext.Provider value={value}>
-      <div className="App">
+    <div>
+      <div className="App" 
+      style={{background: darkMode ? dark.background : light.background, color: darkMode ? dark.foreground : light.foreground }}>
+      <div className="homeSwitchAndSignIn-btn_div">
+     <div className="homeSwitch-div">
+      <DarkMode />
+      <Switch onClick={toggle} />
+      <WbSunnyOutlined />
+      </div>
+      <SignInBtn>Sign in</SignInBtn>
+     </div>
         <TopLayout />
         <Routes>
-          <Route path="/" element={<Home toggle={toggle}/>} />
-          <Route path="/about" element={<About toggle= {toggle}/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <BottomLayout />
       </div>
-    </ThemesContext.Provider>
+    </div>
   );
 }
 

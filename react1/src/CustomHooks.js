@@ -3,31 +3,14 @@ export const H1 = function ({ children }) {
   return (
     <div
       style={{
-        color: "#2c4d7f",
-        fontSize: "32px",
-        fontWeight: "bold",
+        color: "#5c72df",
+        fontSize: "36px",
+        textShadow: "1px 2px 4px #212121",
+        fontWeight: "800",
         paddingLeft: "20px",
       }}
     >
       {children}
     </div>
-  );
-};
-//Sign in button
-export const SignInBtn = function ({ children }) {
-  return (
-    <button
-      style={{
-        padding: "10px 22px",
-        backgroundColor: "green",
-        cursor: "pointer",
-        fontWeight: 600,
-        color: "white",
-        border: 0,
-        borderRadius: "5px",
-      }}
-    >
-      {children}
-    </button>
   );
 };

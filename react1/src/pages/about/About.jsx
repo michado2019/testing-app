@@ -3,6 +3,7 @@ import "./About.css";
 import { H1 } from "../../CustomHooks";
 
 export default function About() {
+  
   return (
     <div>
       <div className="aboutDiv">

@@ -27,7 +27,7 @@
 }
 .bottomLayout-wrapper {
   margin-top: 100px;
-  background-color: #000000;
+  background-color: #686767;
 }
 .bottomLayout-flex {
   display: flex;
@@ -44,7 +44,7 @@
   border-radius: 50%;
 }
 .bottomLayout-text {
-  color: rgb(152, 148, 148);
+  color: #ffffff;
   font-size: 20px;
 }
 .bottomLayout-copyright {

@@ -1,1 +1,31 @@
+.App{
+  background-color: #345433;
+}
+.appSwitchAndSignIn-btn_div {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+}
+.appSwitch-div {
+  display: flex;
+  align-items: center;
+  margin: 85px 0;
+  position: sticky;
+  top: 85px;
+  left: 0;
+  margin-right: auto;
+  color: #5c72df;
 
+}
+.signIn-button, .signOut-button {
+  padding: 3px 6px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 800;
+  border: 0;
+  cursor: pointer;
+  background-color: green;
+}
+.signOut-button {
+    background-color: red;
+  }

@@ -1,30 +1,9 @@
 .homeWrapper {
-  background-image: url("/public/bground.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 700px 400px;
-  background-attachment: fixed;
-}
-.homeSwitchAndSignIn-btn_div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px;
-}
-.homeSwitch-div {
-  display: flex;
-  align-items: center;
-  margin: 85px 0;
-  position: sticky;
-  top: 85px;
-  left: 0;
+  background-color: #f2f2f2;
 }
 .homeFlex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 15%;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .homeFlex a {
   text-decoration: none;
@@ -41,8 +20,8 @@
   animation-direction: alternate-reverse;
 }
 .homeImg {
-  width: 90%;
-  height: 200px;
+  width: 220px;
+  height: 150px;
   margin-top: 50px;
   border-radius: 5px;
   background-color: rgb(103, 61, 61);
@@ -60,9 +39,10 @@
 }
 
 .homeBottom-text {
-  font-size: 18px;
+  font-size: 22px;
   border-bottom: 3px solid #483131;
   padding-top: 5px;
+  color: rgb(166, 39, 39);
 }
 
 .homeClick {
@@ -70,11 +50,16 @@
   font-size: 18px;
   font-weight: 600;
   position: absolute;
-  top: 79%;
+  top: 50%;
   padding-left: 3%;
   font-weight: 700;
   color: #ffffff;
   margin: 4px -8px;
   border-radius: 2px;
   background-color: #2487b5;
+}
+.loading {
+  color: black;
+  text-align: center;
+  margin-top: 8%;
 }

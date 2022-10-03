@@ -57,20 +57,23 @@
 
 /*Media Query*/
 @media (max-width: 600px) {
-  .topLayout-nav_links{
+  .topLayout-nav_links {
     font-size: 20px;
+  }
+  .bottomLayout-copyright {
+    text-align: center;
+    margin: 0;
+    padding: 30px 20px;
   }
 }
 @media (max-width: 375px) {
-  .topLayout-nav_links{
+  .topLayout-nav_links {
     font-size: 18px;
   }
 }
 @media (max-width: 320px) {
-  .topLayout-nav_links{
-    font-size: 16px;
-  }
   .topLayout-nav_links {
+    font-size: 16px;
     padding: 0 4px;
   }
 }

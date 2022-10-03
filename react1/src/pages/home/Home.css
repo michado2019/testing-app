@@ -70,11 +70,19 @@
     grid-template-columns: 2fr 2fr;
     align-items: center;
   }
+  .homeImg {
+    width: 320px;
+  }
   .homeClick {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+  .homeImg {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
   .homeFlex {
     grid-template-columns: 1fr;
   }

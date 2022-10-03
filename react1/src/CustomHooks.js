@@ -4,7 +4,7 @@ export const H1 = function ({ children }) {
     <div
       style={{
         color: "#5c72df",
-        fontSize: "36px",
+        fontSize: "28px",
         fontWeight: "800",
         paddingLeft: "20px",
       }}

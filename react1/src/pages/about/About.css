@@ -28,3 +28,27 @@
   top: 110px;
   right: 6%;
 }
+@media (max-width: 940px) {
+  .aboutBigImg {
+    min-width: 380px;
+    height: 380px;
+  }
+}
+@media (max-width: 870px) {
+  .aboutBigImg {
+    min-width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 670px) {
+  .aboutDetail {
+    text-align: center;
+  }
+  .aboutDetail p {
+    font-size: 20px;
+    line-height: 58px;
+  }
+  .aboutBigImg {
+    display: none;
+  }
+}

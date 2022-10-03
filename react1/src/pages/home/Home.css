@@ -67,6 +67,23 @@
 /*Media Query*/
 @media (max-width: 940px) {
   .homeFlex {
-    overflow-x: scroll;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+  }
+  .homeClick {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .homeFlex {
+    grid-template-columns: 1fr;
+  }
+  .homeImg {
+    width: 320px;
+  }
+}
+@media (max-width: 340px) {
+  .homeImg {
+    width: 100%;
   }
 }

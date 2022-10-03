@@ -2,10 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Layout.css";
 
+//Nav display
 export const TopLayout = function () {
   return (
     <div className="topLayout-wrapper">
-      <nav className="topLayout-flex">
+      <nav className="topLayout-flex" id="topLayout-nav_links">
         <NavLink to="/" className="logoImg">
           <img
             src="https://thealtschool.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-1.png"

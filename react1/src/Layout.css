@@ -70,4 +70,7 @@
   .topLayout-nav_links{
     font-size: 16px;
   }
+  .topLayout-nav_links {
+    padding: 0 4px;
+  }
 }

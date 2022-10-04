@@ -154,6 +154,7 @@ export default function StatusChecker() {
             className="statusChecker-input"
             onChange={handleChange}
           />
+          <small className="format">Format: ALT/SOE/000/0000</small>
           <button className="statusChecker-btn">Submit</button>
         </form>
       </div>

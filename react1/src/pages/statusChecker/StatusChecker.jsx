@@ -124,7 +124,7 @@ export default function StatusChecker() {
     e.preventDefault();
     const student = studentUser[input];
     if (student === undefined) {
-      document.getElementById("userDetails1").innerText = `No user found with the ID ${input}`;
+      document.getElementById("userDetails1").innerText = `No user found with the ID: ${input}`;
     } else {
       const { name, email, track, status, paid, balance, internship } = student;
       document.getElementById("userDetails1").innerText = `Name: ${name}`;

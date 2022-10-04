@@ -18,6 +18,7 @@ export default function Home() {
   });
   return (
     <div className="homeWrapper">
+        <h1 className='homeStatus-info'>Click 'Check status' box to check student's status</h1>
         <div className="homeFlex">
           <a
             href="https://thealtschool.com/software-engineering/"

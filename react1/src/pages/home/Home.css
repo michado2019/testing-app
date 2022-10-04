@@ -1,6 +1,26 @@
 .homeWrapper {
   height: 100%;
 }
+.homeStatus-info{
+ animation-name: status;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: 3s;
+ animation-direction: alternate-reverse;
+ color: #2487b5;
+ text-align: center;
+}
+@keyframes status{
+  0%{
+ color: #336c87;
+ font-size: 22px;
+  }
+  100%{
+ color: #2487b5;
+ font-size: 24px;
+   
+  }
+}
 .homeFlex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
